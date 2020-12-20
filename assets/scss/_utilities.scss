@@ -1,0 +1,14 @@
+@layer utilities {
+    @variants dark {
+      .bg-light {
+        background-color: #f4f6fc;
+      }
+    }
+    .row {
+      margin: 0 -1rem;
+      flex-wrap: wrap;
+    }
+    .col {
+      padding: 0 1rem;
+    }
+  }

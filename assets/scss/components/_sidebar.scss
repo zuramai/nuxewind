@@ -1,0 +1,25 @@
+.sidebar-topbar {
+    height: $topbar-height
+}
+.sidebar-wrapper {
+    transition: $sidebar-transition;
+    width: $sidebar-minimized-width;
+    &.sidebar-open {
+        width: $sidebar-maximized-width;
+        & + #main-header {
+            margin-left: $sidebar-maximized-width;
+        }
+    }
+    .sidebar-menu {
+        .sidebar-item {
+            .sidebar-link {
+                &.nuxt-link-exact-active {
+                    background-color: $sidebar-link-active-bg;
+                }
+            }
+        }
+    }
+    & + #main-header {
+        margin-left: $sidebar-minimized-width;
+    }
+}

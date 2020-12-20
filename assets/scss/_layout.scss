@@ -1,0 +1,22 @@
+body {
+    font-family: $font-family-base;
+    font-size: $font-size-base;
+    color: $font-color-base;
+}
+.container {
+    padding: $container-padding-y $container-padding-x;
+}
+#content {
+    transition: $sidebar-transition;
+    &.sidebar-minimized {
+        margin-left: $sidebar-minimized-width;
+    }
+    &.sidebar-maximized {
+        margin-left: $sidebar-maximized-width;
+    }
+}
+.main-content {
+    margin-top: 2rem;
+}
+
+h1,h2,h3,h4,h5,h6 { color: $header-color }

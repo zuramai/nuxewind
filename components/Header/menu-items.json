@@ -1,0 +1,12 @@
+[
+    {
+        "text": "Dashboard",
+        "icon": "house",
+        "url": "/"
+    },
+    {
+        "text": "Icons",
+        "icon": "flower1",
+        "url": "/icons"
+    }
+]
