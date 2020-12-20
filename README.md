@@ -3,13 +3,13 @@
 
 ## To-do List
 - Components
-  - [] Alert
+  - [ ] Alert
   - [x] Avatar
-  - [] Badge
-  - [] Breadcrumb
-  - [] Button
+  - [ ] Badge
+  - [ ] Breadcrumb
+  - [ ] Button
   - [x] Card
-  - [] Dropdown
+  - [ ] Dropdown
   - [x] Navbar
   - [x] Sidebar
 
