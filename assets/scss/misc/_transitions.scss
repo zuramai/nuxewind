@@ -1,0 +1,14 @@
+.fade-3s-leave-active { transition: all .6s; }
+.fade-3s-enter-active { transition: all .6s; transition-delay: .7s; transition-duration: .6s; }
+.fade-3s-enter-to,.fade-3s-leave { opacity: 1; }
+.fade-3s-leave-to,.fade-3s-enter { opacity: 0; }
+
+.fade-3s-reverse-leave-active { transition: all .6s; transition-delay: .7s}
+.fade-3s-reverse-enter-active { transition-duration: .6s; transition-delay: .7s}
+.fade-3s-reverse-enter-to,.fade-3s-reverse-leave { opacity: 1; }
+.fade-3s-reverse-leave-to,.fade-3s-reverse-enter { opacity: 0; }
+
+.fade-3s-instant-leave-active { transition: all .2s; }
+.fade-3s-instant-enter-active { transition: all .6s; transition-delay: .65s }
+.fade-3s-instant-enter-to,.fade-3s-instant-leave { opacity: 1; }
+.fade-3s-instant-leave-to,.fade-3s-instant-enter { opacity: 0; }

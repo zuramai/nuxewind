@@ -8,5 +8,6 @@
                     'sidebar-maximized': !$store.state.minimizeSidebar}">
             <Nuxt/>
         </div>
+        <page-settings></page-settings>
     </div>
 </template>

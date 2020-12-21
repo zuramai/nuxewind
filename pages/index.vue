@@ -85,7 +85,9 @@
 
 <script>
 export default {
-  layout: 'vertical',
+  layout(context) {
+    return context.store.state.layout;
+  },
   data: () => ({
     chart1: {
       options: {

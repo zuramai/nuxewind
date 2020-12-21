@@ -1,0 +1,19 @@
+.nx-radio {
+    input[type="radio"] {
+		&+label span {
+			transition: background .2s,
+			transform .2s;
+
+			&.triangle-up {
+				width: 0;
+				height: 0;
+				border-left: 50px solid transparent;
+				border-right: 50px solid transparent;
+				border-bottom: 100px solid red;
+			}
+		}
+		&+label span:hover, &+label:hover span {
+			transform: scale(1.2);
+		}
+	}
+}
