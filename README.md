@@ -1,7 +1,17 @@
-# nuxewind
-<<<<<<< HEAD
-Open Source Vue JS (Nuxt) Tailwind Admin Dashboard Template 
-=======
+# Nuxewind
+![Screenshot](https://raw.githubusercontent.com/zuramai/nuxewind/main/screenshot.png)
+
+## To-do List
+- Components
+  - [ ] Alert
+  - [x] Avatar
+  - [ ] Badge
+  - [ ] Breadcrumb
+  - [ ] Button
+  - [x] Card
+  - [ ] Dropdown
+  - [x] Navbar
+  - [x] Sidebar
 
 ## Build Setup
 
@@ -20,5 +30,9 @@ $ yarn start
 $ yarn generate
 ```
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
->>>>>>> 5ceed5d... First Commit
+## Contribute
+Feel free to contribute
+
+## License
+This template is under MIT License
+
