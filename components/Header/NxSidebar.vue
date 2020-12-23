@@ -13,11 +13,11 @@
         </div>
         <ul class="sidebar-menu mt-16">
             <li class='sidebar-item' v-for="(menuItem,index) in menuItems" :key="index">
-                <nuxt-link :to="{path: menuItem.url}" class='sidebar-link  flex items-center py-3 text-gray-500 hover:bg-blue-100'>
-                        <bootstrap-icon :icon="menuItem.icon" size="md" :title="menuItem.text"></bootstrap-icon>
-                        <transition name="fade-3s-instant">
-                            <span class='text-md font-semibold mt-1 sidebar-menu-text' v-if="!$store.state.minimizeSidebar">{{ menuItem.text }}</span>
-                        </transition>
+                <nuxt-link :to="{path: menuItem.url}" class='sidebar-link  flex items-center py-3 text-gray-500 hover:bg-gray-100'>
+                    <bootstrap-icon :icon="menuItem.icon" size="md" :title="menuItem.text"></bootstrap-icon>
+                    <transition name="fade-3s-instant">
+                        <span class='text-md font-semibold mt-1 sidebar-menu-text' v-if="!$store.state.minimizeSidebar">{{ menuItem.text }}</span>
+                    </transition>
                 </nuxt-link>
             </li>
         </ul>

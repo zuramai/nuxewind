@@ -79,7 +79,6 @@
         </div>
       </nx-section>
     </nx-container>
-    </div>
   </div>
 </template>
 

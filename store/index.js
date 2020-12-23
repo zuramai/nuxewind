@@ -1,7 +1,7 @@
 export const state = () => ({
     layout: 'vertical',
     theme: "light",
-    minimizeSidebar: true
+    minimizeSidebar: false
 });
 export const mutations = {
     toggleSidebar(state) {
