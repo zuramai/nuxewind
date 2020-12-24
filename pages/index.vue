@@ -57,7 +57,7 @@
                   </div>
                   <div class="w-1/2 col">
                     <h1 class='text-2xl mb-3 leading-tight font-light'>Welcome to Nuxewind</h1>
-                    <p class='text-sm'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias, dolor fugit distinctio quod, nobis in.</p>
+                    <p class='text-sm'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias, dolor fugit distinctio quod, nobis in </p>
                   </div>
                 </div>
               </template>
