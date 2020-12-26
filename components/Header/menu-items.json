@@ -5,8 +5,8 @@
         "url": "/"
     },
     {
-        "text": "Icons",
-        "icon": "flower1",
+        "text": "Components",
+        "icon": "grid",
         "url": "/icons"
     }
 ]

@@ -59,7 +59,7 @@ export default {
   // Google fonts config
   googleFonts: {
     families: {
-      Quicksand: true,
+      "Exo 2": true,
     }
   },
 

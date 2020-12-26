@@ -2,6 +2,7 @@ body {
     font-family: $font-family-base;
     font-size: $font-size-base;
     color: $font-color-base;
+    overflow-x: hidden;
 }
 .container {
     padding: $container-padding-y $container-padding-x;

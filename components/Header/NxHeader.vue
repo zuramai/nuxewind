@@ -1,17 +1,20 @@
 <template>
     <div id="header-wrapper">
-        <NxSidebar/>
-        <header id='main-header' class="w-100 bg-white border-b border-gray-400 flex items-center">
+        <nx-sidebar v-if="isLayoutVertical"/>
+        <header id='main-header' :class="{'w-100 bg-white flex items-center':true, 'border-b border-gray-400': isLayoutVertical}">
             <div class="container mx-auto">
                 <div class="flex row items-center">
                     <div class="w-1/2 col">
                         <div class='logo flex items-center'>
-                            <transition name="fade-3s-reverse">
-                                <Logo v-if="$store.state.minimizeSidebar"/>
-                            </transition>
-                            <transition name="fade-3s">
-                                <bootstrap-icon v-if="!$store.state.minimizeSidebar" icon="filter-left" class='text-gray-500' size='lg'></bootstrap-icon>
-                            </transition>
+                            <Logo v-if="isLayoutHorizontal"/>
+                            <template v-else>
+                                <transition name="fade-3s-reverse">
+                                    <Logo v-if="$store.state.minimizeSidebar && isLayoutVertical"/>
+                                </transition>
+                                <transition name="fade-3s">
+                                    <bootstrap-icon v-if="!$store.state.minimizeSidebar" icon="filter-left" class='text-gray-500' size='lg'></bootstrap-icon>
+                                </transition>
+                            </template>
                         </div>
                     </div>
                     <div class="w-1/2 col flex justify-end">
@@ -26,5 +29,18 @@
                 </div>
             </div>
         </header>
+        <nx-topbar v-if="isLayoutHorizontal"/>
     </div>
 </template>
+<script>
+export default {
+    computed: {
+        isLayoutVertical() {
+            return this.$store.state.layout == 'vertical'
+        },
+        isLayoutHorizontal() {
+            return this.$store.state.layout == 'horizontal'
+        }
+    }
+}
+</script>
