@@ -4,7 +4,9 @@
             <nx-header/>
         </div>
         <div id="content" >
-            <Nuxt/>
+            <transition name="fade-slide-horizontal" mode="out-in">
+                <Nuxt/>
+            </transition>
         </div>
     </div>
 </template>

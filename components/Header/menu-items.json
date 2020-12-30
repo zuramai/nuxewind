@@ -7,6 +7,12 @@
     {
         "text": "Components",
         "icon": "grid",
-        "url": "/icons"
+        "url": "#",
+        "children": [
+            {
+                "text": "Alert",
+                "url": "/components/alert"
+            }
+        ]
     }
 ]

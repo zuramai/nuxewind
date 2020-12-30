@@ -4,11 +4,18 @@
         background-color: #f4f6fc;
       }
     }
+
+    // Background Colours
+    .bg-primary  { background-color: $primary }
+
+    // Responsive
     .row {
       margin: 0 -1rem;
       flex-wrap: wrap;
     }
     .col { padding: 0 1rem; }
+     
+    // Opacity
     .opacity-1\/2 { opacity: .5; }
     .opacity-4\/5 { opacity: .8; }
-  }
+}

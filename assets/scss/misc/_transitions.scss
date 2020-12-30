@@ -12,3 +12,14 @@
 .fade-3s-instant-enter-active { transition: all .6s; transition-delay: .65s }
 .fade-3s-instant-enter-to,.fade-3s-instant-leave { opacity: 1; }
 .fade-3s-instant-leave-to,.fade-3s-instant-enter { opacity: 0; }
+
+.fade-slide-horizontal-enter-active, 
+.fade-slide-horizontal-leave-active { transition: all .6s cubic-bezier(0, 0.55, 0.45, 1) }
+.fade-slide-horizontal-enter {  opacity: 0; transform: translateX(50px) }
+.fade-slide-horizontal-enter-to { opacity: 1; transform: translateX(0) }
+.fade-slide-horizontal-leave { opacity: 1; transform: translateX(0) }
+.fade-slide-horizontal-leave-to { opacity: 0; transform: translateX(50px); }
+
+.drop-enter-active, .drop-leave-active { transition: all .5s cubic-bezier(0.22, 1, 0.36, 1) }
+.drop-enter, .drop-leave-to { opacity: 0; transform: translateY(10px) }
+.drop-enter-to, .drop-leave { opacity: 1; transform: translateY(0) }
