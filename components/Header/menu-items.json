@@ -12,6 +12,102 @@
             {
                 "text": "Alert",
                 "url": "/components/alert"
+            },
+            {
+                "text": "Avatar",
+                "url": "/components/avatar"
+            },
+            {
+                "text": "Badge",
+                "url": "/components/badge"
+            },
+            {
+                "text": "Breadcrumb",
+                "url": "/components/breadcrumb"
+            },
+            {
+                "text": "Button",
+                "url": "/components/button"
+            },
+            {
+                "text": "Card",
+                "url": "/components/card"
+            },
+            {
+                "text": "Dropdown",
+                "url": "/components/dropdown"
+            },
+            {
+                "text": "Modal",
+                "url": "/components/modal"
+            },
+            {
+                "text": "Progress",
+                "url": "/components/progress"
+            },
+            {
+                "text": "Pagination",
+                "url": "/components/progress"
+            },
+            {
+                "text": "Table",
+                "url": "/components/table"
+            },
+            {
+                "text": "Tooltip",
+                "url": "/components/tooltip"
+            }
+        ]
+    },
+    {
+        "text": "Forms",
+        "icon": "view-stacked",
+        "url": "#",
+        "condition": "horizontal-only",
+        "children": [
+            {
+                "text": "Input",
+                "url": "/forms/input"
+            },
+            {
+                "text": "Textarea",
+                "url": "/forms/textarea"
+            },
+            {
+                "text": "Checkbox",
+                "url": "/forms/checkbox"
+            },
+            {
+                "text": "Radio Button",
+                "url": "/forms/radio"
+            },
+            {
+                "text": "Select",
+                "url": "/forms/select"
+            },
+            {
+                "text": "Range",
+                "url": "/forms/range"
+            }
+        ]
+    },
+    {
+        "text": "Authentication",
+        "icon": "lock",
+        "url": "#",
+        "condition": "horizontal-only",
+        "children": [
+            {
+                "text": "Login",
+                "url": "/pages/auth/login"
+            },
+            {
+                "text": "Register",
+                "url": "/pages/auth/register"
+            },
+            {
+                "text": "Forgot Password",
+                "url": "/pages/auth/forgot-password"
             }
         ]
     }

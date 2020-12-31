@@ -4,7 +4,7 @@
 			<nx-section>
 				<nx-section-header>
 					<template slot="title">
-						Button
+						Range
 					</template>
 					<template slot="subtitle">
 						Beautiful 
@@ -15,7 +15,7 @@
                         <nx-card>
                             <template slot="header">
                                 <nx-card-header>
-                                    <template slot="title">Basic Button</template>
+                                    <template slot="title">Basic Range</template>
                                 </nx-card-header>
                             </template>
                         </nx-card>
@@ -29,7 +29,7 @@
 
 export default {
     head: {
-        title: "Button"
+        title: "Range"
     },
 	layout(context) {
 		return context.store.state.layout;

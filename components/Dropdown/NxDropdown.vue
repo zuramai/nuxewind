@@ -3,9 +3,9 @@
         <div class="dropdown-button" @click="toggleDropdown" ref="dropdownButton">
             <slot name="button"></slot>
         </div>
-        <div class="nx-dropdown-wrapper absolute">
+        <div class="nx-dropdown-wrapper absolute z-10">
             <transition :name="transition">
-                <div class="nx-dropdown bg-white rounded-sm shadow-lg p-3" :style="{ top: offsetTop }" v-if="show"> 
+                <div class="nx-dropdown bg-white rounded-sm shadow-lg  p-5" :style="{ top: offsetTop }" v-show="show"> 
                     <slot name="body"/>
                 </div>
             </transition>

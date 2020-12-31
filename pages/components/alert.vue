@@ -41,12 +41,12 @@ export default {
     head: {
         title: "Alert"
     },
-  layout(context) {
-    return context.store.state.layout;
-  },
-  data: () => ({
-    
-  })
+	layout(context) {
+		return context.store.state.layout;
+	},
+	data: () => ({
+		
+	})
 }
 </script>
 
