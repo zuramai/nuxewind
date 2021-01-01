@@ -5,8 +5,6 @@
       }
     }
 
-    // Background Colours
-    .bg-primary  { background-color: $primary }
 
     // Responsive
     .row {
@@ -18,4 +16,14 @@
     // Opacity
     .opacity-1\/2 { opacity: .5; }
     .opacity-4\/5 { opacity: .8; }
+
+
+    // Font size
+    .text-xxs { font-size: .7rem }
+    
+    // Background Colours
+    @each $color, $value in $colors {
+      .bg-#{$color}  { background-color: $value }
+    }
+    
 }

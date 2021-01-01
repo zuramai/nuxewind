@@ -18,6 +18,9 @@
                                     <template slot="title">Basic Button</template>
                                 </nx-card-header>
                             </template>
+                            <template slot="body">
+                                <nx-button>Primary</nx-button>
+                            </template>
                         </nx-card>
                     </div>
                 </div>

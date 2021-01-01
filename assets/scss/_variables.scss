@@ -16,4 +16,12 @@ $sidebar-link-active-bg:  #eaeeff;
 
 
 // Colors
-$primary: lighten(#4d73ff, 5%);
+$colors: (
+    "primary": rgba(99, 102, 241,1),
+    "secondary": mix(rgb(107, 114, 128), rgb(99, 102, 241), 80%),
+    "warning": rgba(245, 158, 11,1),
+    "danger": rgba(239, 68, 68,1),
+    "success": rgba(16, 185, 129,1),
+    "dark": rgba(55, 65, 81,1),
+    "info": rgba(147, 197, 253,1),
+);
