@@ -1,12 +1,25 @@
 .nx-progress {
     width: 100%;
     background-color: #eeeeee;
-    border-radius: 20px;
 }
 
 .nx-progress-bar {
     width: 0%;
-    height: 20px;
-    background-color: #448aff;
+    height: 100%;
+    border-radius: inherit;
+}
+
+.nx-progress-bar-sm {
     border-radius: 20px;
+    height: 20px;
+}
+
+.nx-progress-bar-md {
+    border-radius: 25px;
+    height: 25px;
+}
+
+.nx-progress-bar-lg {
+    border-radius: 30px;
+    height: 30px;
 }
