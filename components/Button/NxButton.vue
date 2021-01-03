@@ -1,11 +1,22 @@
 <template>
     <button :class="buttonClasses" :disabled="disabled || loading">
-        <nx-loading type='ripple' v-if="loading"/>
-        <slot v-else/>
+        <half-circle-spinner
+            :animation-duration="1000"
+            :size="20"
+            :color="'rgba(255,255,255,.5)'"
+            v-if="loading"
+            class='mr-2'
+        />
+        <span><slot/></span>
     </button>
 </template>
 <script>
+import {HalfCircleSpinner} from 'epic-spinners'
+
 export default {
+    components: {
+        HalfCircleSpinner
+    },
     props: {
         color: {
             default: 'primary'
@@ -55,6 +66,7 @@ export default {
     computed: {
         buttonClasses() {
             return `
+                flex
                 nx-button
                 transition duration-200
                 rounded-${this.rounded}
