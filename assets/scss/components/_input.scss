@@ -1,0 +1,70 @@
+@each $color, $value in $colors {
+    
+    .nx-input-#{$color} {
+        .nx-input:focus {
+                box-shadow: 0 0px 5px rgba($value, .4);
+                border: 1px solid rgba($value, .8);
+        }
+        &.is-focus .nx-label {
+            color: $value;
+        }
+        &.is-label-placeholder .nx-input:focus + .nx-placeholder {
+            transform: translate(-3px,-230%) !important;
+            color: $value;
+            padding: 0;
+        }
+        &.is-input-icon .nx-input:focus ~ .nx-input-icon {
+            color: $value;
+            
+        }
+    } 
+}
+.nx-placeholder {
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);    
+}
+.nx-placeholder, .nx-label {
+    transition: all .2s;
+}
+.nx-input-wrapper.nx-input-placeholder .nx-input:focus + .nx-placeholder{
+    left: 5px
+}
+.nx-input-wrapper.is-label-placeholder .nx-placeholder.stick {
+    transform: translateY(-230%) !important;
+    padding: 0 3px;
+}
+.nx-input-icon {
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.nx-input-wrapper {
+    .nx-input {
+        &.nx-input-sm {
+            padding: $input-sm-padding-y $input-sm-padding-x
+        }
+        &.nx-input-md {
+            padding: $input-md-padding-y $input-md-padding-x
+        }
+        &.nx-input-lg {
+            padding: $input-lg-padding-y $input-lg-padding-x
+        }
+    }
+    &.size-sm { 
+        .nx-placeholder { padding: 0 calc(#{$input-sm-padding-x} + 2px) }
+     }
+    &.size-md { 
+        .nx-placeholder { padding: 0 calc(#{$input-md-padding-x} + 2px) }
+     }
+    &.size-lg { 
+        .nx-placeholder { padding: 0 calc(#{$input-lg-padding-x} + 2px) }
+     }
+
+    &.is-input-icon .nx-input {
+        padding-left: 2.6rem
+    }
+    &.is-input-icon .nx-placeholder {
+        padding-left: 2.6rem
+    }
+}

@@ -4,8 +4,8 @@
             <h1 class="font-bold text-5xl">Welcome Back</h1>
             <p class='text-lg text-gray-600'>Please login to continue.</p>
             <form action="" method="POST" class='mt-5'>
-                <nx-input size='lg' placeholder="Your Username"></nx-input>
-                <nx-input size='lg' placeholder="Your Password"></nx-input>
+                <nx-input size='lg' label="Your Username"></nx-input>
+                <nx-input size='lg' label="Your Password"></nx-input>
             </form>
         </div>
     </div>
