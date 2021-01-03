@@ -1,14 +1,25 @@
 @layer utilities {
     @variants dark {
-		.bg-light {
-			background-color: #f4f6fc;
+		.bg-dark {
+			background-color: $bg-dark;
+		}
+		.bg-dark-card {
+			background-color: $bg-dark-card;
+		}
+		.bg-dark-topbar {
+			background-color: $bg-dark-topbar !important;
+		}
+		.bg-dark-header {
+			// background-color: mix($bg-dark-topbar, map-get($colors,'primary'), 93%) !important;
+			background-color: #222b42  !important;
 		}
     }
 
 
     // Responsive
     .row {
-		margin: 0 -1rem;
+		margin-left: -1rem;
+		margin-right: -1rem;
 		flex-wrap: wrap;
     }
     .col { padding: 0 1rem; }

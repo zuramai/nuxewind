@@ -41,13 +41,13 @@
                             </template>
                             <template v-slot:body>
                                 <div class="flex flex-wrap">
-                                    <nx-button type='outline' color="primary" class='mr-2 mt-2'>Primary</nx-button>
-                                    <nx-button type='outline' color="secondary" class='mr-2 mt-2'>Secondary</nx-button>
-                                    <nx-button type='outline' color="warning" class='mr-2 mt-2'>Warning</nx-button>
-                                    <nx-button type='outline' color="danger" class='mr-2 mt-2'>Danger</nx-button>
-                                    <nx-button type='outline' color="success" class='mr-2 mt-2'>Success</nx-button>
-                                    <nx-button type='outline' color="info" class='mr-2 mt-2'>Info</nx-button>
-                                    <nx-button type='outline' color="dark" class='mr-2 mt-2'>Dark</nx-button>
+                                    <nx-button variant='outline' color="primary" class='mr-2 mt-2'>Primary</nx-button>
+                                    <nx-button variant='outline' color="secondary" class='mr-2 mt-2'>Secondary</nx-button>
+                                    <nx-button variant='outline' color="warning" class='mr-2 mt-2'>Warning</nx-button>
+                                    <nx-button variant='outline' color="danger" class='mr-2 mt-2'>Danger</nx-button>
+                                    <nx-button variant='outline' color="success" class='mr-2 mt-2'>Success</nx-button>
+                                    <nx-button variant='outline' color="info" class='mr-2 mt-2'>Info</nx-button>
+                                    <nx-button variant='outline' color="dark" class='mr-2 mt-2'>Dark</nx-button>
                                 </div>
                             </template>
                         </nx-card>

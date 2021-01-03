@@ -1,7 +1,9 @@
 <template>
-    <div class="card-wrapper mb-5">
+    <div class="card-wrapper mb-5 dark:shadow-none">
         <div class="card bg-white  rounded-md border border-gray-200 
-                    dark:bg-gray-600">
+                    dark:bg-dark-card
+                    dark:border-gray-800
+                    dark:shadow-none">
             <slot name="header"/>
             <div class="card-image" v-if="this.$slots.image">
                 <slot name="image">

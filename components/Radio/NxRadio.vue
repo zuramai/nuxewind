@@ -3,7 +3,7 @@
         <div :class="{'nx-radio':true, [`nx-radio-${shape}`]: true, [`nx-radio-${color}`]: true}">
             <input :id="getValue" type="radio" :name="name" class="hidden" :value="val" @change="changeSelect()"/>
             <label :for="getValue" class="flex items-center cursor-pointer">
-                <span class="w-4 h-4 inline-block mr-1 rounded-full border border-gray-400 bg-blue-400" v-if="shape=='circle'"></span>
+                <span class="w-4 h-4 inline-block mr-1 rounded-full border border-gray-400" v-if="shape=='circle'"></span>
                 <span class="w-4 h-4 inline-block mr-1 rounded-sm border border-gray-400" v-else-if="shape=='square'"></span>
                 {{label}}
             </label>
@@ -37,7 +37,6 @@ export default {
     },
     methods: {
         changeSelect() {
-            console.log('select')
             this.$emit('input', this.val)
         }
     },

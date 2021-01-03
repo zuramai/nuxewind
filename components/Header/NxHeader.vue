@@ -1,7 +1,7 @@
 <template>
     <div id="header-wrapper">
         <nx-sidebar v-if="isLayoutVertical"/>
-        <header id='main-header' :class="{'w-100 bg-white flex items-center':true, 'border-b border-gray-400': isLayoutVertical}">
+        <header id='main-header' :class="{'w-100 bg-white flex items-center':true, 'border-b border-gray-400': isLayoutVertical ,'dark:bg-dark-header': isLayoutHorizontal}">
             <div class="container mx-auto">
                 <div class="flex row items-center">
                     <div class="w-1/2 col">
@@ -20,7 +20,7 @@
                     <div class="w-1/2 col flex justify-end">
                         <div class="dropdown flex items-center">
                             <div class="name mr-2 font-semibold text-right">
-                                <h5>Ahmad Saugi</h5>
+                                <h5 class='dark:text-gray-400'>Ahmad Saugi</h5>
                                 <p class='text-xs'>Administrator</p>
                             </div>
                             <nx-avatar :src="require('@/assets/images/avatar/1.jpg')" size="sm"/>

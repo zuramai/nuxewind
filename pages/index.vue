@@ -19,7 +19,7 @@
                                         </nx-card-header>
                                     </template>
                                     <template slot="body">
-                                        <h1 class="text-5xl font-thin">$4,096</h1>
+                                        <h1 class="text-5xl font-thin dark:text-gray-400">$4,096</h1>
                                         <div class="inline-flex items-center">
                                             <bootstrap-icon
                                                 icon="arrow-down-right"
@@ -42,7 +42,7 @@
                                     </template>
                                     <template slot="body">
                                         <div class="inline-flex items-end w-full">
-                                            <h1 class="text-5xl font-thin">185</h1>
+                                            <h1 class="text-5xl font-thin dark:text-gray-400">185</h1>
                                             <h1 class="text-xl font-thin ml-2 mb-3">
                                                 Customer
                                             </h1>
@@ -71,9 +71,7 @@
                                         ></apexchart>
                                     </div>
                                     <div class="w-1/2 col">
-                                        <h1
-                                            class="text-2xl mb-3 leading-tight font-light"
-                                        >
+                                        <h1 class="text-2xl mb-3 leading-tight font-light dark:text-white">
                                             Welcome to Nuxewind
                                         </h1>
                                         <p class="text-sm">

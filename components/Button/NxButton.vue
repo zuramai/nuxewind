@@ -1,5 +1,5 @@
 <template>
-    <button :class="buttonClasses" :disabled="disabled || loading">
+    <button :class="buttonClasses" :disabled="disabled || loading" :type="type">
         <half-circle-spinner
             :animation-duration="1000"
             :size="20"
@@ -7,19 +7,18 @@
             v-if="loading"
             class='mr-2'
         />
-        <span><slot/></span>
+        <slot/>
     </button>
 </template>
 <script>
-import {HalfCircleSpinner} from 'epic-spinners'
 
 export default {
-    components: {
-        HalfCircleSpinner
-    },
     props: {
         color: {
             default: 'primary'
+        },
+        block: {
+            default: false
         },
         rounded: {
             default:'md',
@@ -29,13 +28,17 @@ export default {
             type: String,
             default: null,
         },
-        type: {
+        variant: {
             type: String,
             default: 'solid'
         },
         size: {
             type: String,
             default: 'md'
+        },
+        type: {
+            type: String,
+            default: 'button'
         },
         disabled: {
             type: Boolean,
@@ -51,6 +54,7 @@ export default {
             'sm': 'px-1  text-sm',
             'md': 'px-3 py-1 text-base',
             'lg': 'px-3 py-2 text-lg',
+            'xl': 'px-5 py-3 text-xl',
         },
         textColors: {
             'primary': 'text-gray-200',
@@ -66,7 +70,7 @@ export default {
     computed: {
         buttonClasses() {
             return `
-                flex
+                flex items-center
                 nx-button
                 transition duration-200
                 rounded-${this.rounded}
@@ -74,11 +78,12 @@ export default {
                 ${this.getVariants}
                 ${this.sizeClasses[this.size]}
                 ${this.textColors[this.color]}
+                ${this.block ? 'w-full justify-center' : ''}
             `
         },
         getVariants() {
-            if(this.type == 'solid') return `bg-${this.color} disabled:bg-lighten-${this.color} disabled:cursor-not-allowed hover:bg-darken-${this.color}`
-            else if(this.type == 'outline') return `border border-${this.color} text-${this.color} hover:text-white hover:bg-${this.color}`
+            if(this.variant == 'solid') return `bg-${this.color} disabled:bg-lighten-${this.color} disabled:cursor-not-allowed hover:bg-darken-${this.color}`
+            else if(this.variant == 'outline') return `border border-${this.color} text-${this.color} hover:text-white hover:bg-${this.color}`
         },
         getSize() {
 

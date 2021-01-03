@@ -1,7 +1,7 @@
 <template>
     <div class="section-header mb-5">
         <div class="section-title" v-if="!!this.$slots.title">
-            <h3 class='text-2xl'>
+            <h3 class='text-2xl dark:text-white'>
                 <slot name="title"/>
             </h3>
         </div>
