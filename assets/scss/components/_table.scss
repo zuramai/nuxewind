@@ -1,0 +1,46 @@
+.nx-table-wrapper {
+    .nx-table {
+        thead th {
+            text-align: left;
+        }
+        &.table-sm {
+            tr td, tr th {
+                padding: $table-sm-padding
+            }
+        }
+        &.table-md {
+            tr td, tr th {
+                padding: $table-md-padding
+            }
+        }
+        &.table-lg {
+            tr td, tr th {
+                padding: $table-lg-padding
+            }
+        }
+        &.table-bordered {
+            tr td, tr th {
+                border: 1px solid rgb(209, 213, 219);
+            } 
+        }
+        &.table-striped {
+            thead tr {
+                border-bottom: 1px solid rgb(209, 213, 219);
+            }
+            tbody tr:nth-child(odd) {
+                background-color: rgb(243, 244, 246);
+            }
+        }
+        &.table-hover {
+            thead tr {
+                border-bottom: 1px solid rgb(107, 114, 128);
+            }
+            tbody tr {
+                border-bottom: 1px solid rgb(209, 213, 219);
+                &:hover {
+                    background-color: #eee;
+                }
+            }
+        }
+    }
+}
