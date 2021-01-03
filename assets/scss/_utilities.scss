@@ -1,4 +1,7 @@
 @layer utilities {
+	.bg-light {
+		background-color:#f4f6fc;
+	}
     @variants dark {
 		.bg-dark {
 			background-color: $bg-dark;
