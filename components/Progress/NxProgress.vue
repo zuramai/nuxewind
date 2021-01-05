@@ -1,8 +1,9 @@
 <template>
     <div class='nx-component mb-2'>
-        <label v-if="label">{{ label }}</label>
         <div :class="progressClasses">
-            <div :class="progressBarClasses" :style="{ width: `${value}%` }"></div>
+            <div :class="progressBarClasses" :style="{ width: `${value}%` }">
+                <label :class="{'absolute right-0 text-xs':true, 'top--5': label=='top'}" v-if="label"><slot/></label>
+            </div>
         </div>
     </div>
 </template>
@@ -33,36 +34,39 @@ export default {
         },
         progressBarClasses() {
             return `
-                nx-progress-bar ${this.getColor}
+                nx-progress-bar 
+                ${this.getColor} ${this.label=='top' ? 'mt-5': ''} 
+                relative
             `
         },
         getSize() {
-            if(this.size == 'sm') { return 'nx-progress-bar-sm' }
-            if(this.size == 'md') { return 'nx-progress-bar-md' }
-            if(this.size == 'lg') { return 'nx-progress-bar-lg' }
+            if(this.size == 'sm') { return 'h-1 rounded-full' }
+            if(this.size == 'md') { return 'h-2 rounded-full' }
+            if(this.size == 'lg') { return 'h-3 rounded-full' }
+            if(this.size == 'xl') { return 'h-5 rounded-full' }
         },
         getColor() {
             switch (this.color) {
                 case 'primary':
-                    return 'bg-primary'
+                    return `bg-${this.color}`
                     break;
                 case 'secondary':
-                    return 'bg-gray-400 text-gray-700'
+                    return `bg-${this.color} text-gray-700`
                     break;
                 case 'warning':
-                    return 'bg-yellow-500'
+                    return `bg-${this.color}`
                     break;
                 case 'danger':
-                    return 'bg-red-500'
+                    return `bg-${this.color}`
                     break;
                 case 'success':
-                    return 'bg-green-500'
+                    return `bg-${this.color}`
                     break;
                 case 'dark':
-                    return 'bg-gray-700'
+                    return `bg-${this.color}`
                     break;
                 case 'info':
-                    return 'bg-blue-300'
+                    return `bg-${this.color}`
                     break;
                 default:
                     break;
