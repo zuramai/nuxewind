@@ -25,7 +25,8 @@
         </div>
         <div :class="wrapperInputClasses" v-else>
             <input 
-                v-on:input="updateValue($event.target.value)" :class="inputClasses" 
+                v-on:input="updateValue($event.target.value)" 
+                :class="inputClasses" 
                 @focus="isFocus=true" 
                 @blur="isFocus=false"
                 :type="type"
@@ -107,7 +108,7 @@ export default {
             }
         },
         inputClasses() {
-            return `nx-input nx-input-${this.size} border border-gray-400 rounded-${this.rounded} w-full transition duration-200`
+            return `nx-input dark:nx-input-dark nx-input-${this.size} border border-gray-400 rounded-${this.rounded} w-full transition duration-200`
         },
         spanClasses() {
             return {
