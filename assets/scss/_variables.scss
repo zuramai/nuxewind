@@ -26,6 +26,10 @@ $colors: (
     "info": rgba(147, 197, 253,1),
 );
 
+$bg-dark: #1a233a;
+$bg-dark-card: #272e48;
+$bg-dark-topbar: #283147;
+
 // Table
 $table-sm-padding: .2rem;
 $table-md-padding: .5rem .4rem;
@@ -38,3 +42,7 @@ $input-md-padding-x: 0.75rem;
 $input-md-padding-y: 0.5rem;
 $input-lg-padding-x: 1rem;
 $input-lg-padding-y: 0.75rem;
+
+$input-dark-color: #828D99;
+$input-dark-border: 1px solid  #464D5C;
+$input-dark-bg: #1A233A;

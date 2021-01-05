@@ -1,6 +1,6 @@
 export const state = () => ({
     layout: 'horizontal',
-    theme: "light",
+    theme: "dark",
     minimizeSidebar: false
 });
 export const mutations = {
@@ -11,10 +11,12 @@ export const mutations = {
         state.layout = value;
     },
     changeTheme(state, value) {
+        this.$colorMode.preference = value;
         state.theme = value;
     }
 }
 export const actions = {
-    toggleSidebar(state) {        
+    changeTheme(state, value) {
+        state.theme = value;
     }
 }

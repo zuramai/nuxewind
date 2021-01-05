@@ -1,5 +1,5 @@
 <template>
-    <div id='layout-horizontal' class='layout-wrapper bg-light dark:bg-black-600 min-h-screen'>
+    <div id='layout-horizontal' class='layout-wrapper bg-light dark:bg-dark min-h-screen'>
         <div id="app">
             <nx-header/>
         </div>
@@ -8,5 +8,6 @@
                 <Nuxt/>
             </transition>
         </div>
+        <page-settings></page-settings>
     </div>
 </template>

@@ -14,7 +14,7 @@
       fill="#884fff"
     />
   </svg>
-  <h3 class='text-xl font-bold'>Nuxe<span style="color:#884fff">wind</span></h3>
+  <h3 class='text-xl font-bold dark:text-gray-500'>Nuxe<span style="color:#884fff">wind</span></h3>
 
 </div>
   

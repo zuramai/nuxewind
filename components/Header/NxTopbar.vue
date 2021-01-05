@@ -1,5 +1,5 @@
 <template>
-    <div id="topbar" class='w-full h-16 flex items-center'>
+    <div id="topbar" class='w-full h-16 flex items-center dark:bg-dark-topbar'>
         <div class="container mx-auto">
             <ul class="topbar-menu flex">
                 <template v-for="(menuItem,index) in menuItems" >
