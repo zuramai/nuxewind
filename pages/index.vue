@@ -65,7 +65,7 @@
                                     <div class="w-1/2 col">
                                         <apexchart
                                             height="180"
-                                            type="bar"
+                                            type="bar"yarn dev
                                             :options="chart1.options"
                                             :series="chart1.series"
                                         ></apexchart>

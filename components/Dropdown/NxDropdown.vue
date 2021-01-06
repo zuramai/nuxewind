@@ -5,7 +5,7 @@
         </div>
         <div class="nx-dropdown-wrapper absolute z-10">
             <transition :name="transition">
-                <div class="nx-dropdown bg-white rounded-sm shadow-lg  p-5" :style="{ top: offsetTop }" v-show="show"> 
+                <div class="nx-dropdown bg-white dark:bg-dark rounded-sm shadow-lg  p-5" :style="{ top: offsetTop }" v-show="show"> 
                     <slot name="body"/>
                 </div>
             </transition>

@@ -68,3 +68,18 @@
         padding-left: 2.6rem
     }
 }
+
+@layer utilities {
+    @variants dark {
+        .nx-input-dark {
+			background: $input-dark-bg;
+			color: $input-dark-color;
+			&:not(:focus) {
+				border: $input-dark-border;
+			}
+			&:focus {
+				box-shadow:none;
+			}
+		}
+    }
+}

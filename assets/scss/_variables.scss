@@ -46,3 +46,15 @@ $input-lg-padding-y: 0.75rem;
 $input-dark-color: #828D99;
 $input-dark-border: 1px solid  #464D5C;
 $input-dark-bg: #1A233A;
+
+$checkbox-active: #275EFE;
+$checkbox-active-inner: #fff;
+$checkbox-focus: 2px rgba(39, 94, 254, .3);
+$checkbox-border: #BBC1E1;
+$checkbox-border-hover: #275EFE;
+$checkbox-background: #fff;
+$checkbox-disabled: #F6F8FF;
+$checkbox-disabled-inner: #E1E6F9;
+
+$checkbox-dark-bg: $input-dark-bg;
+$checkbox-dark-border: $input-dark-border;

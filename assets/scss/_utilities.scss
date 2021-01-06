@@ -7,16 +7,7 @@
 		.bg-dark-card { background-color: $bg-dark-card; }
 		.bg-dark-topbar { background-color: $bg-dark-topbar !important; }
 		.bg-dark-header { background-color: #222b42  !important;}
-		.nx-input-dark {
-			background: $input-dark-bg;
-			color: $input-dark-color;
-			&:not(:focus) {
-				border: $input-dark-border;
-			}
-			&:focus {
-				box-shadow:none;
-			}
-		}
+		
     }
 
 

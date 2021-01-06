@@ -18,6 +18,12 @@
                                     <template slot="title">Basic Checkbox</template>
                                 </nx-card-header>
                             </template>
+                            <template v-slot:body>
+                                <nx-checkbox val="Apple" name="fruit" label="Apple" v-model="fruit"></nx-checkbox>
+                                <nx-checkbox val="Banana" name="fruit" label="Banana" v-model="fruit"></nx-checkbox>
+                                <nx-checkbox val="Mango" name="fruit" label="Mango" v-model="fruit"></nx-checkbox>
+                                You chose: {{fruit}}
+                            </template>
                         </nx-card>
                     </div>
                 </div>
@@ -35,7 +41,7 @@ export default {
 		return context.store.state.layout;
 	},
 	data: () => ({
-		
+		fruit: ['Apple']
 	})
 }
 </script>
