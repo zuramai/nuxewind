@@ -28,6 +28,7 @@ $ yarn dev
   - [x] Dropdown
   - [x] Navbar
   - [x] Sidebar
+  - [x] Progress
 - Forms
   - [x] Checkbox
   - [x] Input
