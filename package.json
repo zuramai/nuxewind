@@ -19,7 +19,8 @@
     "nuxt": "^2.14.6",
     "sass-loader": "^10.1.0",
     "tailwindcss-dark-mode": "^1.1.7",
-    "vue-apexcharts": "^1.6.0"
+    "vue-apexcharts": "^1.6.0",
+    "vue-snap": "^0.6.6"
   },
   "devDependencies": {
     "@fortawesome/free-brands-svg-icons": "^5.15.1",

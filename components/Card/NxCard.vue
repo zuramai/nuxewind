@@ -10,7 +10,8 @@
                     <img src="@/assets/images/no-image.png" alt="No image available">
                 </slot>
             </div>
-            <div class="card-body px-5 py-5 pt-0">
+            <slot name="body-free"/>
+            <div class="card-body px-5 py-5 pt-0" v-if="$slots.body">
                 <slot name="body"/>
             </div>
             <div class="card-footer">
