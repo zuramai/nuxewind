@@ -1,34 +1,44 @@
-# Nuxewind
 ![Screenshot](https://raw.githubusercontent.com/zuramai/nuxewind/main/screenshot.png)
 
-## To-do List
-- Components
-  - [ ] Alert
-  - [x] Avatar
-  - [ ] Badge
-  - [ ] Breadcrumb
-  - [ ] Button
-  - [x] Card
-  - [ ] Dropdown
-  - [x] Navbar
-  - [x] Sidebar
+## Installation
 
-## Build Setup
-
+1. Clone this repository
+```bash
+git clone https://github.com/zuramai/nuxewind
+```
+2. Install dependencies
 ```bash
 # install dependencies
 $ yarn install
-
-# serve with hot reload at localhost:3000
-$ yarn dev
-
-# build for production and launch server
-$ yarn build
-$ yarn start
-
-# generate static project
-$ yarn generate
 ```
+
+3. Start the project
+```bash
+$ yarn dev
+```
+
+## To-do List
+- Components
+  - [x] Alert
+  - [ ] Avatar
+  - [x] Badge
+  - [x] Breadcrumb
+  - [x] Button
+  - [x] Card
+  - [x] Dropdown
+  - [x] Navbar
+  - [x] Sidebar
+- Forms
+  - [x] Checkbox
+  - [x] Input
+  - [ ] Textarea
+  - [ ] Select
+  - [ ] Range
+- Authentication
+  - [x] Login
+  - [ ] Register
+  - [ ] Forgot Password
+
 
 ## Contribute
 Feel free to contribute
