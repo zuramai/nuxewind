@@ -17,6 +17,7 @@
     "epic-spinners": "^1.1.0",
     "node-sass": "^5.0.0",
     "nuxt": "^2.14.6",
+    "nuxt-vue-select": "^0.1.4",
     "sass-loader": "^10.1.0",
     "tailwindcss-dark-mode": "^1.1.7",
     "vue-apexcharts": "^1.6.0",

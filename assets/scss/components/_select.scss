@@ -1,0 +1,36 @@
+.v-select {
+    transition: all .2s;
+    .vs__dropdown-toggle {
+        background-color: white;
+        border-color:rgba(203, 213, 224, var(--border-opacity));
+        padding-bottom: 7px; 
+    }
+    .vs__selected {
+        color: rgb(107, 114, 128);
+        margin-top: 7px;        
+    }
+    .vs__deselect {
+        fill: #dedede;
+    }
+    &:not(.vs--single) {
+        .vs__selected {
+            background-color: map-get($colors,'primary');
+            color: #fff;
+        }
+    }
+    .vs__search, .vs__search:focus {
+        margin-top: 7px;
+    }
+    
+    &.vs--open {
+        box-shadow: 0 0px 5px rgba(map-get($colors,'primary'), .4);
+
+        .vs__dropdown-toggle {
+            border-color:rgba(99, 102, 241, 0.8)
+        }
+    }
+}
+
+.dark .v-select  {
+    
+}
