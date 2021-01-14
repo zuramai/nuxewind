@@ -21,6 +21,7 @@
     "sass-loader": "^10.1.0",
     "tailwindcss-dark-mode": "^1.1.7",
     "vue-apexcharts": "^1.6.0",
+    "vue-js-modal": "^2.0.0-rc.6",
     "vue-snap": "^0.6.6"
   },
   "devDependencies": {

@@ -13,10 +13,13 @@
                 <div class="flex row">
                     <div class="col w-full">
                         <nx-card>
-                            <template slot="header">
+                            <template v-slot:header>
                                 <nx-card-header>
                                     <template slot="title">Basic Textarea</template>
                                 </nx-card-header>
+                            </template>
+                            <template v-slot:body>
+                                <nx-textarea></nx-textarea>
                             </template>
                         </nx-card>
                     </div>

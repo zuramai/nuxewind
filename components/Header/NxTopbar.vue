@@ -16,7 +16,7 @@
                             <template slot="body">
                                 <ul class="submenu">
                                     <li class="" v-for="(submenu, sIndex) in menuItem.children" :key="sIndex">
-                                        <nuxt-link :to="{path: submenu.url}" class='hover:text-gray-800 text-gray-600 py-2 transition duration-200 block'>{{ submenu.text }}</nuxt-link>
+                                        <nuxt-link :to="{path: submenu.url}" class='dark-hover:text-gray-400 hover:text-gray-800 text-gray-600 py-2 transition duration-200 block'>{{ submenu.text }}</nuxt-link>
                                     </li>
                                 </ul>
                             </template>

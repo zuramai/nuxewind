@@ -25,7 +25,8 @@ export default {
   plugins: [
     { src: "~/plugins/vue-apexcharts", ssr: false },
     { src: "~/plugins/epic-spinners", ssr: false },
-    '@/plugins/vue-snap'
+    '@/plugins/vue-snap',
+    '~plugins/vue-js-modal.js'
   ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
