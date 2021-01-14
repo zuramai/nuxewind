@@ -1,5 +1,9 @@
 <template>
-    <button :class="buttonClasses" :disabled="disabled || loading" :type="type">
+    <button :class="buttonClasses" 
+        :disabled="disabled || loading" 
+        :type="type"
+        @click="$emit('click')"
+    >
         <half-circle-spinner
             :animation-duration="1000"
             :size="20"
