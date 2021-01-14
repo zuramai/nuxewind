@@ -21,6 +21,10 @@
     .vs__search, .vs__search:focus {
         margin-top: 7px;
     }
+
+    .vs__dropdown-option--highlight {
+        background-color: map-get($colors, 'primary' );
+    }
     
     &.vs--open {
         box-shadow: 0 0px 5px rgba(map-get($colors,'primary'), .4);
@@ -33,4 +37,22 @@
 
 .dark .v-select  {
     
+    .vs__dropdown-toggle {
+        background-color: $input-dark-bg;
+        border: $input-dark-border;
+    }
+
+    .vs__actions {
+        .vs__clear,.vs__open-indicator {
+            fill: #ccc
+        }
+    }
+    .vs__dropdown-menu {
+        background:#222b42;
+        @apply text-white;
+    }
+
+    .vs__dropdown-option {
+        color: white;
+    }
 }
