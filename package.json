@@ -20,8 +20,10 @@
     "nuxt-vue-select": "^0.1.4",
     "sass-loader": "^10.1.0",
     "tailwindcss-dark-mode": "^1.1.7",
+    "v-tooltip": "^2.1.2",
     "vue-apexcharts": "^1.6.0",
     "vue-js-modal": "^2.0.0-rc.6",
+    "vue-slider-component": "^3.2.11",
     "vue-snap": "^0.6.6"
   },
   "devDependencies": {
@@ -30,6 +32,7 @@
     "@nuxtjs/color-mode": "^2.0.2",
     "@nuxtjs/fontawesome": "^1.1.2",
     "@nuxtjs/google-fonts": "^1.2.0",
+    "@nuxtjs/style-resources": "^1.0.0",
     "@nuxtjs/tailwindcss": "^3.1.0",
     "@vue/test-utils": "^1.1.0",
     "babel-core": "7.0.0-bridge.0",

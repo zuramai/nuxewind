@@ -23,8 +23,8 @@ export default {
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [
-    { src: "~/plugins/vue-apexcharts", ssr: false },
-    { src: "~/plugins/epic-spinners", ssr: false },
+    { src: "~/plugins/vue-apexcharts", mode: 'client' },
+    { src: "~/plugins/epic-spinners", mode: 'client' },
     '@/plugins/vue-snap',
     '~plugins/vue-js-modal.js'
   ],
@@ -50,6 +50,7 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    '@nuxtjs/style-resources',
     'nuxt-vue-select'
   ],
 
@@ -58,6 +59,11 @@ export default {
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
+    analyze: true,
+    // or
+    analyze: {
+      analyzerMode: 'static'
+    }
   },
 
   // Google fonts config
@@ -65,6 +71,12 @@ export default {
     families: {
       "Exo 2": true,
     }
+  },
+
+  styleResources: {
+    scss: [
+      './assets/scss/_variables.scss',
+      ]
   },
 
   // Colormode config

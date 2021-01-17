@@ -16,16 +16,23 @@ $sidebar-maximized-width:   270px;
 $sidebar-transition :       all .5s cubic-bezier(0.87, 0, 0.13, 1);
 $sidebar-link-active-bg:  #eaeeff;
 
+$primary    : rgba(99, 102, 241,1);
+$warning    : rgba(245, 158, 11,1);
+$secondary     : mix(rgb(107, 114, 128), rgb(99, 102, 241), 80%);
+$danger     :rgba(239, 68, 68,1);
+$success    : rgba(16, 185, 129,1);
+$dark       : rgba(55, 65, 81,1);
+$info       :   rgba(147, 197, 253,1);
 
 // Colors
 $colors: (
-    "primary": rgba(99, 102, 241,1),
-    "secondary": mix(rgb(107, 114, 128), rgb(99, 102, 241), 80%),
-    "warning": rgba(245, 158, 11,1),
-    "danger": rgba(239, 68, 68,1),
-    "success": rgba(16, 185, 129,1),
-    "dark": rgba(55, 65, 81,1),
-    "info": rgba(147, 197, 253,1),
+    "primary": $primary,
+    "secondary": $secondary,
+    "warning": $warning,
+    "danger": $danger,
+    "success": $success,
+    "dark": $dark,
+    "info": $info   ,
 );
 
 $bg-dark: #1a233a;

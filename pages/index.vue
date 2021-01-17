@@ -63,12 +63,14 @@
                             <template slot="body">
                                 <div class="flex row items-center">
                                     <div class="w-1/2 col">
-                                        <apexchart
-                                            height="180"
-                                            type="bar"yarn dev
-                                            :options="chart1.options"
-                                            :series="chart1.series"
-                                        ></apexchart>
+                                        <client-only>
+                                                <apexchart
+                                                    height="180"
+                                                    type="bar"
+                                                    :options="chart1.options"
+                                                    :series="chart1.series"
+                                                ></apexchart>
+                                        </client-only>
                                     </div>
                                     <div class="w-1/2 col">
                                         <h1 class="text-2xl mb-3 leading-tight font-light dark:text-white">
@@ -92,12 +94,14 @@
                                 </nx-card-header>
                             </template>
                             <template slot="body">
-                                <apexchart
-                                    height="300"
-                                    type="line"
-                                    :options="chart2.options"
-                                    :series="chart2.series"
-                                ></apexchart>
+                                <client-only>
+                                    <apexchart
+                                        height="300"
+                                        type="line"
+                                        :options="chart2.options"
+                                        :series="chart2.series"
+                                    ></apexchart>
+                                </client-only>
                             </template>
                         </nx-card>
                     </div>

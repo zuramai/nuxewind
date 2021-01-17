@@ -30,11 +30,11 @@
     .text-xxs { font-size: .7rem }
     
 	//  Colours
+	@variants hover,active,disabled {
 	@each $color, $value in $colors {
-		@variants hover,active,disabled {
-			.bg-#{$color}  { background-color: $value }
-			.bg-darken-#{$color}  { background-color: darken($value,10%) }
+			.bg-#{$color}  { background-color: $value; }
 			.bg-lighten-#{$color}  { background-color: lighten($value,10%) }
+			.bg-darken-#{$color}  { background-color: darken($value,10%) }
 
 			.text-#{$color}  { color: $value }
 			.text-darken-#{$color}  { color: darken($value,10%) }
