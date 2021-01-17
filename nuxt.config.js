@@ -38,7 +38,9 @@ export default {
     '@nuxtjs/tailwindcss',
     '@nuxtjs/fontawesome',
     '@nuxtjs/google-fonts',
-    '@nuxtjs/color-mode'
+    '@nuxtjs/color-mode',
+    '@aceforth/nuxt-optimized-images',
+    'nuxt-purgecss',
   ],
 
   tailwindcss: {
@@ -77,6 +79,11 @@ export default {
     scss: [
       './assets/scss/_variables.scss',
       ]
+  },
+
+  
+  optimizedImages: {
+    optimizeImages: true
   },
 
   // Colormode config

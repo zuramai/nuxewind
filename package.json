@@ -10,13 +10,16 @@
     "test": "jest"
   },
   "dependencies": {
+    "@aceforth/nuxt-optimized-images": "^1.4.0",
     "@nuxtjs/axios": "^5.12.2",
     "apexcharts": "^3.23.0",
     "bootstrap-icons": "^1.2.1",
     "core-js": "^3.6.5",
     "epic-spinners": "^1.1.0",
+    "imagemin-mozjpeg": "^9.0.0",
     "node-sass": "^5.0.0",
     "nuxt": "^2.14.6",
+    "nuxt-purgecss": "^1.0.0",
     "nuxt-vue-select": "^0.1.4",
     "sass-loader": "^10.1.0",
     "tailwindcss-dark-mode": "^1.1.7",

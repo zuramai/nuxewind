@@ -7,7 +7,7 @@
 						Tooltip
 					</template>
 					<template slot="subtitle">
-						Beautiful 
+						Nuxewind is using v-tooltip for the tooltip component 
 					</template>
 				</nx-section-header>
                 <div class="flex row">
