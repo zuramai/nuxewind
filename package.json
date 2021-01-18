@@ -38,9 +38,12 @@
     "@nuxtjs/style-resources": "^1.0.0",
     "@nuxtjs/tailwindcss": "^3.1.0",
     "@vue/test-utils": "^1.1.0",
+    "autoprefixer": "^9",
     "babel-core": "7.0.0-bridge.0",
     "babel-jest": "^26.5.0",
     "jest": "^26.5.0",
+    "postcss": "^7",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat",
     "vue-jest": "^3.0.4"
   }
 }
