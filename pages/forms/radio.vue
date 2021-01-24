@@ -4,7 +4,7 @@
 			<nx-section>
 				<nx-section-header>
 					<template slot="title">
-						Textarea
+						Radio Button
 					</template>
 					<template slot="subtitle">
 						Beautiful 
@@ -15,8 +15,13 @@
                         <nx-card>
                             <template slot="header">
                                 <nx-card-header>
-                                    <template slot="title">Basic Textarea</template>
+                                    <template slot="title">Basic Radio</template>
                                 </nx-card-header>
+                            </template>
+                            <template slot="body">
+                                <nx-radio name="radio1" label="Lorem" val="lorem" v-model="radio1"></nx-radio>
+                                <nx-radio name="radio1" label="Ipsum" val="ipsum" v-model="radio1"></nx-radio>
+                                You choosed: {{radio1}}
                             </template>
                         </nx-card>
                     </div>
@@ -35,7 +40,9 @@ export default {
 		return context.store.state.layout;
 	},
 	data: () => ({
-		
+        radio1: '',
+        radio2: '',
+        radio3: '',
 	})
 }
 </script>
