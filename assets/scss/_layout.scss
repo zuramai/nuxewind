@@ -8,6 +8,9 @@ body {
 .container {
     padding: $container-padding-y $container-padding-x;
 }
+.container-fluid {
+    padding: 0 $container-fluid-padding-x;
+}
 #content {
     transition: $sidebar-transition;
     &.sidebar-minimized {

@@ -1,6 +1,6 @@
 <template>
     <div class="main-content">
-        <nx-container>
+        <nx-container vertical="fluid" horizontal="default">
             <nx-section>
                 <nx-section-header>
                     <template slot="title"> Dashboard </template>

@@ -71,7 +71,7 @@ export default {
   // Google fonts config
   googleFonts: {
     families: {
-      "Exo 2": true,
+      "Exo 2": [400,500,600,700,800],
     }
   },
 

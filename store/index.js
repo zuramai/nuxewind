@@ -1,5 +1,5 @@
 export const state = () => ({
-    layout: 'horizontal',
+    layout: 'vertical',
     theme: "dark",
     minimizeSidebar: false
 });

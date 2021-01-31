@@ -2,7 +2,7 @@
     <div id="header-wrapper">
         <nx-sidebar v-if="isLayoutVertical"/>
         <header id='main-header' :class="{'w-100 bg-white flex items-center':true, 'border-b border-gray-400': isLayoutVertical ,'dark:bg-dark-header': isLayoutHorizontal}">
-            <div class="container mx-auto">
+            <nx-container vertical="fluid" class="flex-grow">
                 <div class="flex row items-center">
                     <div class="w-1/2 col">
                         <div class='logo flex items-center'>
@@ -27,7 +27,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </nx-container>
         </header>
         <nx-topbar v-if="isLayoutHorizontal"/>
     </div>
