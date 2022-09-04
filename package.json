@@ -1,49 +1,17 @@
 {
-  "name": "nuxewind",
-  "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
     "build": "nuxt build",
-    "start": "nuxt start",
+    "dev": "nuxt dev",
     "generate": "nuxt generate",
-    "test": "jest"
-  },
-  "dependencies": {
-    "@aceforth/nuxt-optimized-images": "^1.4.0",
-    "@nuxtjs/axios": "^5.12.2",
-    "apexcharts": "^3.23.0",
-    "bootstrap-icons": "^1.2.1",
-    "core-js": "^3.6.5",
-    "epic-spinners": "^1.1.0",
-    "imagemin-mozjpeg": "^9.0.0",
-    "node-sass": "^5.0.0",
-    "nuxt": "^2.14.6",
-    "nuxt-purgecss": "^1.0.0",
-    "nuxt-vue-select": "^0.1.4",
-    "sass-loader": "^10.1.0",
-    "tailwindcss-dark-mode": "^1.1.7",
-    "v-tooltip": "^2.1.2",
-    "vue-apexcharts": "^1.6.0",
-    "vue-js-modal": "^2.0.0-rc.6",
-    "vue-slider-component": "^3.2.11",
-    "vue-snap": "^0.6.6"
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "@fortawesome/free-brands-svg-icons": "^5.15.1",
-    "@fortawesome/free-solid-svg-icons": "^5.15.1",
-    "@nuxtjs/color-mode": "^2.0.2",
-    "@nuxtjs/fontawesome": "^1.1.2",
-    "@nuxtjs/google-fonts": "^1.2.0",
-    "@nuxtjs/style-resources": "^1.0.0",
-    "@nuxtjs/tailwindcss": "^3.1.0",
-    "@vue/test-utils": "^1.1.0",
-    "autoprefixer": "^9",
-    "babel-core": "7.0.0-bridge.0",
-    "babel-jest": "^26.5.0",
-    "jest": "^26.5.0",
-    "postcss": "^7",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat",
-    "vue-jest": "^3.0.4"
+    "@nuxtjs/google-fonts": "3.0.0-0",
+    "@nuxtjs/tailwindcss": "^5.3.2",
+    "@unocss/nuxt": "^0.45.15",
+    "nuxt": "3.0.0-rc.9",
+    "sass": "^1.54.8"
   }
 }
