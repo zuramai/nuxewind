@@ -11,7 +11,11 @@
     "@nuxtjs/google-fonts": "3.0.0-0",
     "@nuxtjs/tailwindcss": "^5.3.2",
     "@unocss/nuxt": "^0.45.15",
+    "apexcharts": "^3.35.5",
     "nuxt": "3.0.0-rc.9",
     "sass": "^1.54.8"
+  },
+  "dependencies": {
+    "vue3-apexcharts": "^1.4.1"
   }
 }
