@@ -5,7 +5,7 @@
         </div>
         <div id="content" >
             <transition name="fade-slide-horizontal" mode="out-in">
-                <Nuxt/>
+                <slot />
             </transition>
         </div>
         <page-settings></page-settings>

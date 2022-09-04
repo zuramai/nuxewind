@@ -6,7 +6,7 @@
         <div id="content" 
             :class="{'sidebar-minimized': $store.state.minimizeSidebar, 
                     'sidebar-maximized': !$store.state.minimizeSidebar}">
-            <Nuxt/>
+            <slot />
         </div>
         <page-settings></page-settings>
     </div>
